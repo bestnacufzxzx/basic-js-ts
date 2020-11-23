@@ -9,7 +9,7 @@ import th from "date-fns/locale/th"; // the locale you want
 import setMinutes from "date-fns/setMinutes";
 import setHours from "date-fns/setHours";
 import 'react-datepicker/dist/react-datepicker.css';
-import TextInput from '../../components/TextInput';
+import TextInput from '../TextInput'; 
 import { Form, Checkbox } from 'semantic-ui-react'
 registerLocale("th", th); // register it with the name you want
 
@@ -24,7 +24,7 @@ const initialState = {
 }
 
 
-export default class Profile extends Component{
+export default class profile extends Component{
 
     state = {
         initialState : initialState,

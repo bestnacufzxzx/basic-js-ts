@@ -9,7 +9,9 @@ import Header from './Layout/Header';
 import Containers from './containers/containers';
 import Footer from './Layout/Footer';
 // import Content from './Layout/Content';
-import Profile from './components/Profile/profile';
+import Profile from './components/profile/profile';
+import Skill from './components/skill/Skill';
+
 
 export default class App extends Component{
   render(){
@@ -18,7 +20,8 @@ export default class App extends Component{
         <MenuBar></MenuBar>
         <Containers>
             <Header></Header>
-              <Route exact path="/" component={Profile}/>
+              <Route exact path="/" component={Skill}/>
+              <Route path="/profile" component={Profile}/>
             <Footer></Footer>
         </Containers>
       </BrowserRouter>
